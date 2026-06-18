@@ -1,0 +1,98 @@
+/* === PALETA DE COLORES === */
+:root {
+    --color1: #809bce; /* Azul */
+    --color2: #95b8d1; /* Azul claro */
+    --color3: #b8e0d2; /* Verde menta */
+    --color4: #d6eadf; /* Verde muy claro */
+    --color5: #eac4d5; /* Rosa */
+}
+
+/* === FONDO GENERAL === */
+body {
+    background-color: #f5f5f5;
+}
+
+/* === NAVBAR CON TU PALETA === */
+.navbar {
+    background-color: var(--color1) !important;
+}
+
+/* === CARDS CON EFECTO NEON === */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Card de trabajos - Azul */
+.card.border-primary {
+    background-color: white;
+    border-left: 5px solid var(--color1) !important;
+}
+
+.card.border-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--color1), 
+                0 0 30px var(--color1),
+                0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Botones de trabajos */
+.btn-primary {
+    background-color: var(--color1);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color2);
+    box-shadow: 0 0 10px var(--color2), 0 0 20px var(--color2);
+}
+
+/* Card de certificados - Verde menta */
+.card.border-success {
+    background-color: white;
+    border-left: 5px solid var(--color3) !important;
+}
+
+.card.border-success:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--color3), 
+                0 0 30px var(--color3),
+                0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Botones de certificados */
+.btn-success {
+    background-color: var(--color3);
+    border: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--color4);
+    box-shadow: 0 0 10px var(--color3), 0 0 20px var(--color3);
+    color: #000;
+}
+
+/* === IMAGENES DE CERTIFICADOS === */
+.card-img-top {
+    height: 280px;
+    object-fit: contain;
+    background-color: var(--color4);
+    padding: 15px;
+}
+
+/* === TÍTULOS === */
+h1, h2, h5 {
+    color: var(--color1);
+    font-weight: 600;
+}
+
+/* === EFECTO NEON PARA EL FOOTER === */
+footer {
+    background-color: var(--color5) !important;
+    color: #333;
+    box-shadow: 0 -5px 15px rgba(234, 196, 213, 0.4);
+}
